@@ -9,21 +9,13 @@ Stay up to date
 ---------------
 
 Please be sure to keep your app up to date with the latest version of the SDK.
-All releases follow [semantic versioning](http://semver.org/).
 
-The latest version is available via `mavenCentral()`.  Just add the following dependency:
+Newer versions are available as `.aar`'s in the [releases page](https://github.com/OutSystems/card.io-Android-SDK/releases).
+Download and copy the `aar` to a `libs` folder inside your module and add the following line to your `build.gradle`:
 
 ```
-compile 'io.card:android-sdk:5.5.1'
+implementation(files("libs/card.io-5.5.1-OS1.aar"))
 ```
-
-You can receive updates about new versions via a few different channels:
-
-* Follow [@cardio](https://twitter.com/cardio) (also great to send us feedback)
-* Subscribe to our [card-io-sdk-announce](https://groups.google.com/forum/#!forum/card-io-sdk-announce) list.
-* "Watch" this GitHub repository
-
-Also be sure to check and post to the [Stack Overflow card.io tag](http://stackoverflow.com/questions/tagged/card.io).
 
 Integration instructions
 ------------------------
@@ -35,7 +27,7 @@ The information in this guide is enough to get started. For additional details, 
 ### Requirements for card scanning
 
 *   Rear-facing camera.
-*   Android SDK version 16 (Android 4.1) or later.
+*   Android SDK version 21 (Android 5) or later.
 *   armeabi-v7a, arm64-v8, x86, or x86_64 processor.
 
 A manual entry fallback mode is provided for devices that do not meet these requirements.
@@ -45,7 +37,7 @@ A manual entry fallback mode is provided for devices that do not meet these requ
 Add the dependency in your `build.gradle`:
 
 ```
-compile 'io.card:android-sdk:5.5.0'
+implementation(files("libs/card.io-5.5.1-OS1.aar"))
 ```
 
 ### Sample code  (See the SampleApp for an example)

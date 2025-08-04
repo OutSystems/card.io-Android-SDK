@@ -39,8 +39,9 @@ android {
 }
 
 dependencies {
-    implementation(files("../aars/card.io-5.5.1-OS1.aar"))
+    implementation(files("../aars/card.io-5.5.1-OS2.aar"))
 
+    implementation 'androidx.activity:activity:1.10.1'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.13'
 
     androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.2"

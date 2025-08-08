@@ -14,7 +14,7 @@ Newer versions are available as `.aar`'s in the [releases page](https://github.c
 Download and copy the `aar` to a `libs` folder inside your module and add the following line to your `build.gradle`:
 
 ```
-implementation(files("libs/card.io-5.5.1-OS2.aar"))
+implementation(files("libs/card.io-5.5.1-OS3.aar"))
 ```
 
 Integration instructions
@@ -37,7 +37,7 @@ A manual entry fallback mode is provided for devices that do not meet these requ
 Add the dependency in your `build.gradle`:
 
 ```
-implementation(files("libs/card.io-5.5.1-OS2.aar"))
+implementation(files("libs/card.io-5.5.1-OS3.aar"))
 ```
 
 ### Sample code  (See the SampleApp for an example)
